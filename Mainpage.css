@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,600&display=swap');
+:root{
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed:1000ms; 
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Serif', serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248, 248, 233);
+
+}
+
+
+.mainpage{
+    background-color: rgb(248, 248, 233);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+.mainpageNavbar{
+    background-color: rgb(248, 248, 233);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    justify-content: space-between;
+}
+.mainpageLogo{
+    display: flex;
+    gap: 5px;
+    font-size:x-large;
+    margin-left:1%;
+}
+.mainpageNavbar a{
+    color: black;
+    text-decoration: none;
+}
+.Logo fa-solid{    
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-top: 2px;
+}
+.mainpageMenu{
+    margin-top: 0.5%;
+    margin-right: 2%;
+    display: flex;
+    gap: 20px;
+}
+.mainpageNavbar button{
+    border: none;
+    background-color: rgb(248, 248, 233);
+    height: 100%;
+    width: 50px;
+}
+.mainpageWelcome{
+    background: url(BG.jpg);
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: rgb(248, 248, 233);
+}
+.welcomeName{
+    width: 60%;
+    position: absolute;
+    top: 63%;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    font-size: 100px;
+}
+.welcomeSlogan{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: 82%;
+    left:70%;
+    font-size:20px;
+}
+.welcomeText{
+    width: 40%;
+    height: 10%;
+    position: absolute;
+    left: 55%;
+    top: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.mainpageAcceuil{
+    width: 100%;
+    height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Presentation{
+    height: 60%;
+    width: 100%;
+    display: flex;
+}
+.Photo1{
+    background: url(Maison-dhote.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 51%;
+}
+.Text1{
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 60%;
+}
+.Text1 p{
+    font-size:small;
+}
+.Text1 p::first-letter{
+    font-size: x-large;
+}
+.Text1 a {
+    text-decoration: none;
+    color: black;
+}
+.quiNousSommes{
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+.Text2{
+    margin-left:3%;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.Text2 p{
+    font-size:small;
+}
+.Text2 p::first-letter{
+    font-size: x-large;
+}
+.Photo2{
+    background: url(camping.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 78%;
+}
+
+
+
+.mainpageEvenements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.Events{
+    display:flex;
+    width: 90vw;
+}
+.Event{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: beige;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.Events h3 {
+    background-color: rgb(248, 248, 233);
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+    position: absolute;
+    left: 0%;
+    top: 85%;
+    margin: 0;
+    opacity: 0;
+}
+.Events a {
+    color: black;
+    text-decoration: none;
+}
+.Event.active{
+    flex: 5;
+}
+.Event.active h3 {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in 0.4s ;
+}
+@media (max-width: 600px){
+    .Events{
+        width: 100vw;
+    }
+}
+
+
+
+.mainpageBonsplans{
+    background-color: rgb(162, 162, 134);
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.mainpageBonsplans h1 {
+    background-color: rgb(248, 248, 233 , 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin:0;
+
+}
+
+.mainpageBonsplans a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.BPmaisondhote{
+    background: url(BPmaison-d-Hote.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 100%;
+    width: 50%;
+
+}
+.BPcamping{
+    background: url(BPcamping.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 100%;
+    width: 50%;
+}
+.hover-left .BPmaisondhote{
+    width: var(--hover-width)
+}
+.hover-left .BPcamping{
+    width: var(--other-width) ;
+}
+.hover-right .BPcamping{
+    width: var(--hover-width)
+}
+.hover-right .BPmaisondhote{
+    width: var(--other-width) ;
+}
+.BPcamping, .BPmaisondhote {
+    transition: all var(--speed) ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainpageAvis{
+    width: 100%;
+    height: 100%;
+}
+.mainpageContact{
+    width: 100%;
+    height: 100%;
+}
+
